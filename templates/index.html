@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortTicket IMS</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #10243a;
+            color: white;
+            padding: 22px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0001;
+        }
+
+        .card h3 {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .card p {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .actions {
+            margin-top: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #087f5b;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 6px;
+            margin: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PortTicket IMS</h1>
+    <p>Vehicle Entry & Parking Management System</p>
+</header>
+
+<main>
+
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Vehicles Inside</h3>
+            <p>0</p>
+        </div>
+
+        <div class="card">
+            <h3>Registered Vehicles</h3>
+            <p>0</p>
+        </div>
+
+        <div class="card">
+            <h3>Tickets Issued Today</h3>
+            <p>0</p>
+        </div>
+
+        <div class="card">
+            <h3>Revenue Today</h3>
+            <p>$0.00</p>
+        </div>
+
+    </div>
+
+    <div class="actions">
+        <h2>Vehicle Operations</h2>
+
+        <button>Register Vehicle</button>
+        <button>Issue Entry Ticket</button>
+        <button>Vehicle Exit</button>
+        <button>View Reports</button>
+    </div>
+
+</main>
+
+</body>
+</html>
